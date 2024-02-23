@@ -15,6 +15,29 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+.gif-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.gif-card:hover {
+  transform: scale(1.05); 
+}
+
+.gif-card img {
+  transition: opacity 0.3s, transform 0.3s; 
+}
+
+.gif-card:hover img {
+  opacity: 0.4; 
+}
+
+
+
+
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);

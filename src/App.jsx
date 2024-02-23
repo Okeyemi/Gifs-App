@@ -58,11 +58,11 @@ function App() {
         )}
         <div className="grid md:grid-cols-4  grid-cols-2  mt-4 ">
           {gifs.map((gif) => (
-            <div key={gif.id} className="rounded-lg overflow-hidden p-1">
+            <div key={gif.id} className="gif-card rounded-lg overflow-hidden p-1">
               <img
                 src={gif.images.fixed_height.url}
                 alt={gif.title}
-                className="w-full h-full object-cover rounded-lg"
+                className="gif w-full h-full object-cover rounded-lg cursor-pointer"
               />
             </div>
           ))}
